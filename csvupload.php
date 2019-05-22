@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1> Tag Apply </h1>
-	<form action = "tagallcsv.php"  enctype = "multipart/form-data" name = "form1" id ="form1" method = "POST">
+	<form action = "tagallcsvdata.php"  enctype = "multipart/form-data" name = "form1" id ="form1" method = "POST">
 		<label>Tag No:*</label>
 		<input type="text" autocomplete = "off" placeholder="Enter Tag No" pattern="[0-9]{4,}" name="tag" id="tag" title="It must contain only number and a length of minimum 3 characters!" required autofocus>
 		<label>Upload CSV File:*</label>
