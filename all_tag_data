@@ -1,0 +1,20 @@
+<?php
+  
+	include("isdk.php");
+   // $tagnumber = $_POST ["tag"]; 
+    $tagnumber =	12791;  //tag number 
+ 		$app = new iSDK;
+		if ($app->cfgCon("connectionName")) 
+		{            					 
+			 $returnFields=array('Id','FirstName','Email','Phone1');
+			$contacts = $app->dsFind("Contact",1000,0,'Groups',$tagnumber, $returnFields);  // will return perticular tag data 
+		 
+            echo '<pre>'; 
+            print_r($contacts);
+            echo '</pre>';
+            print_r($contacts); 
+         }
+                                
+ 
+
+?>
